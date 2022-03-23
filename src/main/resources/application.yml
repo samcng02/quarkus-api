@@ -1,0 +1,25 @@
+quarkus:
+  smallrye-jwt:
+    enabled: true
+
+  datasource:
+    devservices:
+      enabled: false
+
+    db-kind: postgresql
+    username: postgres
+    password: 123456
+    jdbc:
+      url: jdbc:postgresql://localhost:5433/postgres
+      driver: org.postgresql.Driver
+
+  hibernate-orm:
+    database:
+      generation: update
+    log:
+      sql: true
+
+smallrye:
+  jwt:
+    path:
+      groups: "roles"
