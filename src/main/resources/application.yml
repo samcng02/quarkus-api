@@ -7,10 +7,12 @@ quarkus:
       enabled: false
 
     db-kind: postgresql
-    username: postgres
-    password: 123456
+    username: abc
+    #password: 123456
+    password: somePassword
     jdbc:
-      url: jdbc:postgresql://localhost:5433/postgres
+      # url: jdbc:postgresql://localhost:5433/postgres
+      url: jdbc:postgresql://localhost:5432/postgres
       driver: org.postgresql.Driver
 
   hibernate-orm:
